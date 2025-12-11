@@ -1,36 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The home page is made up of 2 components of top prompt card and top poem cards. The top poems cards goes through the array of data and filters the top 4 poems and creates a card that showcases them. The top prompt card does the same filtering but with prompts instead but takes the top 3. It then inside the component uses the prompt card component to make a card.
 
-## Getting Started
+The search page is just an input bar. While under it is a list of the prompts array. As you type in the filter bar it uses the useState and target value to always have what the user inputs. It then takes the input and checks whether it exists using .map
 
-First, run the development server:
+The generate random word api and random sentence api has 4 useStates. 1 for the results and 1 for the loading. With the word and sentence each having one. It uses an async try block to fetch the api data if there is an error the catch block takes care of it and the finally changes sets the loading to false so it does not display the loading data. With the data it returns the results in the box. Once it generates there is a button under the newly generated word to give user the option to use it as a prompt
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We used for NavBar to implement dynamic routing and put it in Layout so it can be shown in every single page. Also, we created a prompt page with [id] to prevent repetition of pages that share the same UIs but have different data. For Styling and Theming, we removed all the Tailwind CSS, and modularized CSS files for each page. It prevents class name conflict since it’s independently imported by its modules page. Using RandomBox, we show how our web application dynamically incorporates changes.
