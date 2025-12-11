@@ -1,0 +1,81 @@
+.frontpage {
+  height: 70vh;  /* 70% of viewport height */
+  min-height: 500px;  /* Minimum height on small screens */
+}
+  
+  
+.frontpageimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* ← This makes image fit properly! */
+    object-position: center;
+}
+  
+  
+.frontpage h2 {
+    position: absolute;
+    top: 400px;          
+    left: 400px;
+    z-index: 10;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+  
+  
+  .heading{
+    margin-top: 20px;
+  }
+  
+  
+  .pageContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .section {
+    margin-top: 4rem;
+    padding: 0 6rem;
+  }
+  
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  @media (max-width: 900px) {
+    .frontpage {
+      flex-direction: column;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+  
+  
+    .frontTitle {
+      font-size: 2.3rem;
+    }
+  
+  
+    .frontImage {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+  
+    .section {
+      padding: 0 2rem;
+    }
+  
+  
+    .sectionTitle {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  

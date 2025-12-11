@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { Poem } from '../pages/types';
 
 
-interface PoemCardProps {
+interface PoemCardProps{
   poem: Poem;
 }
 
-export default function PoemCard({ poem }: PoemCardProps) {
+export default function PoemCard({ poem }: PoemCardProps){
   //managing likes
   const [likes, setLikes] = useState(poem.likes);
   const [isLiked, setIsLiked] = useState(false);

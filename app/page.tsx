@@ -1,35 +1,47 @@
 'use client';
 
-import { useState } from 'react';
-import PromptCard from './components/prompts';
-import { promptsArray } from './pages/data';
+
+import React from "react";
+import styles from "./homepage.module.css";
+import FeaturedPoems from "./components/featuredPoems";
+import TrendingPrompts from "./components/topPrompts";
 
 
-export default function FeedPage() {
-  //manages all prompts
-  const [prompts, setPrompts] = useState(promptsArray);
-
-  const handleCreatePrompt = () => {
-  };
-
+export default function HomePage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-2">Poetry Feed</h1>
+    <div className={styles.pageContainer}>
+     
+      {/* Front Banner */}
+      <section id="frontpage" className={styles.frontpage}>
+        <h2 className={styles.frontTitle}>
+          Read Poems.
+          <br />
+          Write Poems.
+          <br />
+          Inspire Others.
+        </h2>
 
-      {/* Create Button */}
-      <button
-        onClick={handleCreatePrompt}
-        className="w-2xs bg-linear-to-r from-cyan-500 to-blue-500 text-white shadow-lg py-3 rounded-lg font-semibold"
-      >
-        + Create New Prompt
-      </button>
 
-      {/* List of Prompts */}
-      <div className="space-y-4 w-150">
-        {prompts.map((prompt) => (
-          <PromptCard key={prompt.id} prompt={prompt} />
-        ))}
-      </div>
+        <img
+          className={styles.frontImage}
+          src="/out-spoken-banner.jpg"
+          alt="Front Page"
+        />
+      </section>
+
+
+      {/* Featured Poems */}
+      <section className={styles.section}>
+        <h1 className={styles.sectionTitle}>Featured Poems</h1>
+        <FeaturedPoems />
+      </section>
+
+
+      {/* Trending Prompts */}
+      <section className={styles.section}>
+        <h1 className={styles.sectionTitle}>Hot Prompts</h1>
+        <TrendingPrompts />
+      </section>
     </div>
   );
 }

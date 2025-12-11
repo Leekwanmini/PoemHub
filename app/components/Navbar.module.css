@@ -1,0 +1,48 @@
+.navbar {
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+  
+
+.container{
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+  
+.logo:hover {
+    color: #bfdbfe;
+}
+  
+  /* 메뉴 컨테이너 */
+.menu {
+    display: flex;
+    gap: 1.5rem; /* space-x-6 */
+}
+  
+  /* 각 메뉴 항목 */
+.menuItem {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+  
+.menuItem:hover {
+    color: #bfdbfe; /* hover:text-blue-200 */
+}
+  

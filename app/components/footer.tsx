@@ -1,12 +1,14 @@
+import styles from './footer.module.css';
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white mt-auto">
-      <div className="max-w-6xl mx-auto px-4 py-6">
-        <div className="text-center">
-          <p className="text-sm">
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.inner}>
+          <p className={styles.mainText}>
             &copy; 2024 PoemHub - A platform for poets
           </p>
-          <p className="text-xs text-gray-400 mt-2">
+          <p className={styles.subText}>
             Front-end Group Project
           </p>
         </div>

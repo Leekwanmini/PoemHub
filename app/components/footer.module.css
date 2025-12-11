@@ -1,0 +1,29 @@
+
+.footer{
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    margin-top: auto;  
+}
+  
+
+.container{
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+  
+
+.inner{
+    text-align: center;
+}
+
+.mainText{
+    font-size: 0.875rem;
+}
+
+.subText{
+    font-size: 0.75rem; 
+    color: #9ca3af; 
+    margin-top: 0.5rem;
+}
+  

@@ -1,0 +1,112 @@
+/* ===== Main Card ===== */
+.card {
+    background-color: white;             /* bg-white */
+    border-radius: 0.5rem;               /* rounded-lg */
+    padding: 1.5rem;                     /* p-6 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+    transition: box-shadow 0.2s ease;    /* transition-shadow */
+}
+  
+.card:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15); /* hover:shadow-lg */
+}
+  
+  /* ===== Author Section ===== */
+  
+.authorRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem; /* mb-3 */
+}
+  
+.avatar {
+    width: 2.5rem;                 /* w-10 */
+    height: 2.5rem;                /* h-10 */
+    background-color: #3b82f6;     /* bg-blue-500 */
+    border-radius: 50%;            /* rounded-full */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+  
+.authorInfo {
+    margin-left: 0.75rem; /* ml-3 */
+}
+  
+.authorName {
+    font-weight: 600; /* font-semibold */
+}
+  
+.authorUsername {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280;      /* text-gray-500 */
+}
+  
+  /* ===== Prompt Text ===== */
+  
+.promptWrapper {
+    margin-bottom: 1rem;     /* mb-4 */
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+  
+.promptWrapper:hover .promptText {
+    color: #2563eb;          /* hover:text-blue-600 */
+}
+  
+.promptText {
+    font-size: 1.125rem; /* text-lg */
+    font-style: italic;  /* italic */
+}
+  
+  /* ===== Footer ===== */
+  
+.footerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.date {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280;      /* text-gray-500 */
+}
+  
+  /* ===== Like Button ===== */
+  
+.likeButton {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* space-x-1 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+  
+  /* unliked state */
+.unliked {
+    color: #6b7280; /* text-gray-500 */
+}
+  
+.unliked:hover {
+    color: #ef4444; /* hover:text-red-500 */
+}
+  
+  /* liked state */
+.liked {
+    color: #ef4444; /* text-red-500 */
+}
+  
+  /* Heart icon size */
+.heart {
+    font-size: 1.25rem; /* text-xl */
+}
+  
+.likeCount {
+    font-size: 1rem;
+}
+  
