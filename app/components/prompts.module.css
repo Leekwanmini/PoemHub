@@ -1,29 +1,27 @@
-/* ===== Main Card ===== */
 .card {
-    background-color: white;             /* bg-white */
-    border-radius: 0.5rem;               /* rounded-lg */
-    padding: 1.5rem;                     /* p-6 */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
-    transition: box-shadow 0.2s ease;    /* transition-shadow */
+    background-color: white;             
+    border-radius: 0.5rem;               
+    padding: 1.5rem;                  
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    transition: box-shadow 0.2s ease;  
 }
   
 .card:hover {
-    box-shadow: 0 10px 15px rgba(0,0,0,0.15); /* hover:shadow-lg */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15); 
 }
   
-  /* ===== Author Section ===== */
-  
+
 .authorRow {
     display: flex;
     align-items: center;
-    margin-bottom: 0.75rem; /* mb-3 */
+    margin-bottom: 0.75rem; 
 }
   
 .avatar {
-    width: 2.5rem;                 /* w-10 */
-    height: 2.5rem;                /* h-10 */
-    background-color: #3b82f6;     /* bg-blue-500 */
-    border-radius: 50%;            /* rounded-full */
+    width: 2.5rem;               
+    height: 2.5rem;              
+    background-color: #3b82f6;   
+    border-radius: 50%;       
     color: white;
     display: flex;
     align-items: center;
@@ -32,38 +30,36 @@
 }
   
 .authorInfo {
-    margin-left: 0.75rem; /* ml-3 */
+    margin-left: 0.75rem; 
 }
   
 .authorName {
-    font-weight: 600; /* font-semibold */
+    font-weight: 600; 
 }
   
 .authorUsername {
-    font-size: 0.875rem; /* text-sm */
-    color: #6b7280;      /* text-gray-500 */
+    font-size: 0.875rem;
+    color: #6b7280; 
 }
   
-  /* ===== Prompt Text ===== */
-  
+
 .promptWrapper {
-    margin-bottom: 1rem;     /* mb-4 */
+    margin-bottom: 1rem;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
   
 .promptWrapper:hover .promptText {
-    color: #2563eb;          /* hover:text-blue-600 */
+    color: #2563eb; 
 }
   
 .promptText {
-    font-size: 1.125rem; /* text-lg */
-    font-style: italic;  /* italic */
+    font-size: 1.125rem;
+    font-style: italic; 
 }
   
-  /* ===== Footer ===== */
-  
+
 .footerRow {
     display: flex;
     justify-content: space-between;
@@ -71,39 +67,39 @@
 }
   
 .date {
-    font-size: 0.875rem; /* text-sm */
-    color: #6b7280;      /* text-gray-500 */
+    font-size: 0.875rem;
+    color: #6b7280; 
 }
   
-  /* ===== Like Button ===== */
+
   
 .likeButton {
     display: flex;
     align-items: center;
-    gap: 0.25rem; /* space-x-1 */
+    gap: 0.25rem;
     background: none;
     border: none;
     cursor: pointer;
     transition: color 0.15s ease;
 }
   
-  /* unliked state */
+
 .unliked {
-    color: #6b7280; /* text-gray-500 */
+    color: #6b7280; 
 }
   
 .unliked:hover {
-    color: #ef4444; /* hover:text-red-500 */
+    color: #ef4444; 
 }
   
-  /* liked state */
+ 
 .liked {
-    color: #ef4444; /* text-red-500 */
+    color: #ef4444;
 }
   
-  /* Heart icon size */
+
 .heart {
-    font-size: 1.25rem; /* text-xl */
+    font-size: 1.25rem;
 }
   
 .likeCount {
