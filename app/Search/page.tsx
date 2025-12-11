@@ -2,16 +2,17 @@
 
 
 import { useState } from "react";
-import { promptsArray } from "../pages/data";
 import PromptCard from "../components/prompts";
 import styles from "./search.module.css";
+import { usePrompts } from "../contexts/PromptContext";
 
 
 export default function SearchPage() {
+    const { prompts } = usePrompts();
     const [query, setQuery] = useState("");
 
 
-    const filteredPrompts = promptsArray.filter((prompt) =>
+    const filteredPrompts = prompts.filter((prompt) =>
         prompt.text.toLowerCase().includes(query.toLowerCase())
     );
 

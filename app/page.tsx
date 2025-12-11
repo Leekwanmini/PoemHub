@@ -5,9 +5,12 @@ import React from "react";
 import styles from "./homepage.module.css";
 import FeaturedPoems from "./components/featuredPoems";
 import TrendingPrompts from "./components/topPrompts";
+import { usePrompts } from "./contexts/PromptContext";
 
 
 export default function HomePage() {
+  const { prompts } = usePrompts();
+
   return (
     <div className={styles.pageContainer}>
      

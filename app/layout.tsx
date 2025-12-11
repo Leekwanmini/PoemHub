@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
+import { PromptProvider } from "./contexts/PromptContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex flex-col min-h-screen bg-gray-100`}>
-        <Navbar />
-        <main className="grow">
-          {children}
-        </main>
-        <Footer />
+        <PromptProvider>
+          <Navbar />
+          <main className="grow">
+            {children}
+          </main>
+          <Footer />
+        </PromptProvider>
       </body>
     </html>
   );

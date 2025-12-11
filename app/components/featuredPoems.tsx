@@ -7,7 +7,7 @@ import { Poem } from '../pages/types';
 
 
 export default function FeaturedPoems() {
-    // Sort poems by likes and take top 4
+    //sort poems by likes and take top 4
     const topPoems: Poem[] = [...poemsArray]
         .sort((a, b) => b.likes - a.likes)
         .slice(0, 6);

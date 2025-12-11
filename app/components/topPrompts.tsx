@@ -1,16 +1,17 @@
 'use client';
 
 
-import { promptsArray } from "../pages/data";
+
 import PromptCard from "./prompts";
 import styles from "./topPrompts.module.css";
+import { usePrompts } from "../contexts/PromptContext";
 
 
 export default function TrendingPrompts() {
-    const topPrompts = [...promptsArray]
+    const { prompts } = usePrompts();
+    const topPrompts = [...prompts]
         .sort((a, b) => b.likeCount - a.likeCount)
         .slice(0, 3);
-
 
     return (
         <div className={styles.container}>

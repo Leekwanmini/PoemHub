@@ -3,16 +3,15 @@
     margin: 0 auto;
     padding: 2rem 1rem;
   }
-  
-  /* Two Column Layout - 3:1 ratio */
+
   .twoColumnLayout {
     display: grid;
-    grid-template-columns: 3fr 1fr;  /* Left is 3x wider than right */
+    grid-template-columns: 3fr 1fr;
     gap: 2rem;
     align-items: start;
   }
   
-  /* LEFT COLUMN - Main Feed */
+
   .leftColumn {
     width: 100%;
   }
@@ -76,28 +75,27 @@
     color: #1f2937;
     margin-bottom: 1rem;
 }
-  
-  /* Responsive design */
+
 @media (max-width: 1024px) {
     .twoColumnLayout {
-      grid-template-columns: 2fr 1fr;  /* Slightly narrower on tablets */
+      grid-template-columns: 2fr 1fr;
       gap: 1.5rem;
     }
 }
   
 @media (max-width: 768px) {
-    /* Stack columns on tablets and mobile */
+
     .twoColumnLayout {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
     
     .rightColumn {
-      order: -1; /* Move RandomWordBox to top on mobile */
+      order: -1;
     }
     
     .stickyContainer {
-      position: static; /* Remove sticky on mobile */
+      position: static;
     }
 }
   

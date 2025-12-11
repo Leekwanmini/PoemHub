@@ -7,10 +7,13 @@ import { promptsArray } from '../pages/data';
 import styles from './feed.module.css';
 import RandomGen from '../components/RandomBox';
 import {user} from '../pages/data'
+import { usePrompts } from '../contexts/PromptContext';
 
 export default function FeedPage() {
-    const [prompts, setPrompts] = useState(promptsArray);
+    const { prompts, setPrompts } = usePrompts();
 
+    
+    
     const handleCreatePrompt = () => {
 
     };

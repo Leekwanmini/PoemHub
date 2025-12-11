@@ -28,7 +28,6 @@ export default function CreatePromptPage() {
         return;
         }
 
-        // TODO: Phase 3 - Save to database/API
         console.log('Creating prompt:', promptText);
         
         // Redirect back to feed after creating
